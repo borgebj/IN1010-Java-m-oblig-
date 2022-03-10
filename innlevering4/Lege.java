@@ -7,6 +7,7 @@ public class Lege extends Lenkeliste<Resept> implements Comparable<Lege>  {
     // lenkeliste som holder alle resepter legen har skrevet ut
     Lenkeliste<Resept> utskrevedeResepter = new Lenkeliste<Resept>();
 
+
     public Lege(String navn){
         this.navn = navn;
     }
@@ -30,7 +31,6 @@ public class Lege extends Lenkeliste<Resept> implements Comparable<Lege>  {
     public Lenkeliste hentResepter() {
         return utskrevedeResepter;
     }
-
 
     // metode for aa  skrive ut (lage > legge til liste > returne) resept av typen "HvitResept"
     public HvitResept skrivHvitResept(Legemiddel legemiddel, Pasient pasient, int reit) throws UlovligUtskrift {
@@ -82,5 +82,4 @@ public class Lege extends Lenkeliste<Resept> implements Comparable<Lege>  {
         pasient.addResept(Blaa);
         return Blaa;
     }
-
 }

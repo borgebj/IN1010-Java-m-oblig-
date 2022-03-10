@@ -4,6 +4,7 @@ public class Spesialist extends Lege implements Godkjenningsfritak{
     // instansvariabel ID fra parameteren for kontrollID'en
     int kontrollID;
 
+
     public Spesialist(String navn, int kontrollID) {
         super(navn);
         this.kontrollID = kontrollID;
@@ -16,7 +17,7 @@ public class Spesialist extends Lege implements Godkjenningsfritak{
 
     @Override // metode som overskriver toString()-metoden og returner relevant info
     public String toString() {
-        return ("Spesialist: " + navn + " (ID "+kontrollID+")");
+        return ("Spesialist: " + navn );
     }
 
     @Override // metode for aa  skrive ut (lage > legge til liste > returne) resept av typen "HvitResept"
@@ -63,5 +64,4 @@ public class Spesialist extends Lege implements Godkjenningsfritak{
         pasient.addResept(Blaa);
         return Blaa;
     }
-
 }
